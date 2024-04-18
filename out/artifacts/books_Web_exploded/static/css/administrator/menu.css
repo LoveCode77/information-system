@@ -1,0 +1,29 @@
+.content .show .menu{
+    float: left;
+    width: 1250px;
+    height: 80px;
+}
+.content .show .menu ul{
+    list-style: none;
+
+}
+.content .show .menu .mark{
+    background-color: blue;
+}
+.content .show .menu ul li{
+    float: left;
+    width: 180px;
+    height: 80px;
+    text-align: center;
+}
+.content .show .menu ul li:hover{
+    background-color: blue;
+}
+.content .show .menu ul li a{
+    line-height: 80px;
+    text-decoration: none;
+    color: black;
+}
+.content .show .menu ul li a:hover{
+    text-decoration: underline;
+}

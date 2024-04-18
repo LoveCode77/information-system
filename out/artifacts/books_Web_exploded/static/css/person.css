@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f0f0f0;
+}
+.content{
+
+    width: 1000px;
+    height: 800px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.content .left{
+    background-color: white;
+
+    float: left;
+    width: 199px;
+    height: 800px;
+    border-right: #f0f0f0 solid 1px;
+}
+.content .left ul{
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+.content .left ul li{
+    background-color: white;
+    height: 60px;
+    width: 198px;
+}
+.content .left ul li a{
+    background-color: white;
+    line-height: 60px;
+    font-size: 25px;
+    text-decoration: white;
+    color: black;
+}
+.content .right{
+    background-color: #00b7ee;
+
+    float: left;
+    width: 800px;
+    height: 800px;
+}
+.content .right .top{
+    background-color: white;
+    width: 800px;
+    height:200px;
+    border-bottom: #f0f0f0 solid 1px;
+
+}
+.content .right .top .image{
+    background-color: white;
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.content .right .top .image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+.content .right .top .title {
+    background-color: white;
+    float: left;
+    width: 590px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 25px;
+    text-align: center;
+}
+.content .right .top .title span{
+    background-color: white;
+    font-size: 60px;
+    line-height: 150px;
+}
+.content .right .center{
+    width: 800px;
+    height: 600px;
+    background-color: white;
+
+}
+.content .right .center ul{
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+    list-style: none;
+    border: #f0f0f0 solid 1px;
+
+}
+.content .right .center ul li{
+    background-color: white;
+    text-align: left;
+    line-height: 40px;
+    height: 40px;
+    width: 700px;
+    font-size: 20px;
+    border-bottom: #f0f0f0 solid 1px;
+}

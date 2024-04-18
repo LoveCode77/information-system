@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kuang.dao.ReplyMapper">
+
+    <select id="queryByTopicId" resultType="reply" parameterType="int">
+        select * from ssmbuild.replys where topicId=#{topicId}
+    </select>
+    <select id="queryByReplyContexts" resultType="reply" parameterType="string">
+        select * from ssmbuild.replys where replyContexts LIKE CONCAT('%',#{replyContexts},'%')
+    </select>
+    <insert id="addReply" parameterType="reply">
+       insert into ssmbuild.replys(topicId,id,replyContexts)
+       values
+       (#{topicId},#{id},#{replyContexts})
+    </insert>
+    <update id="updataReply" parameterType="reply">
+
+    </update>
+    <delete id="deleteReply" parameterType="int">
+
+    </delete>
+
+</mapper>

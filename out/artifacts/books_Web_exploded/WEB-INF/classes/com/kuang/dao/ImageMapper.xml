@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kuang.dao.ImageMapper">
+
+    <select id="queryAll" resultType="image">
+        select * from ssmbuild.image
+    </select>
+
+    <select id="queryImageById" resultType="image">
+        select * from ssmbuild.image
+        where id=#{id}
+    </select>
+    <insert id="addImage" parameterType="image">
+        insert into ssmbuild.image(id,imageAddress)
+        values (#{id},#{imageAddress})
+    </insert>
+    <update id="updateImage" parameterType="image">
+        update ssmbuild.image
+        set id=#{id},imageAddress=#{imageAddress}
+        where imageId=#{imageId}
+    </update>
+    <delete id="deleteImage" parameterType="int">
+        delete from ssmbuild.image
+        where imageId=#{imageId}
+    </delete>
+</mapper>

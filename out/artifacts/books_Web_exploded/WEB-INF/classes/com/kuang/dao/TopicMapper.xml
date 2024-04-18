@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kuang.dao.TopicMapper">
+
+    <select id="queryAllTopics" resultType="topic">
+        SELECT * from ssmbuild.topics
+    </select>
+
+    <select id="queryAllTopicsOrderByReply" resultType="topic">
+        SELECT * FROM `topics` ORDER BY `topicReplyCount` DESC
+    </select>
+
+    <select id="queryTopicByTopicId" parameterType="int" resultType="topic">
+        SELECT * FROM topics
+        WHERE topicId=#{tipicId}
+    </select>
+
+    <select id="queryByTopicTitleOrTopicContexts" parameterType="string" resultType="topic">
+        SELECT *
+        from topics
+        WHERE `topicTitle` LIKE CONCAT('%',#{input},'%')
+           OR`topicContexts` LIKE CONCAT('%',#{input},'%')
+    </select>
+    <select id="queryByTopicSectonId" parameterType="int" resultType="topic">
+        SELECT *
+        from topics
+        WHERE topicSectonId=#{topicSectonId}
+    </select>
+
+    <insert id="addTopic" parameterType="topic">
+    insert into
+        ssmbuild.topics(topicSectonId,id,topicReplyCount,
+            topicImage,topicTitle,topicContexts,topicTime,topicLastClickTime
+            )
+    values
+    (
+    #{topicSectonId},#{id},#{topicReplyCount},
+    #{topicImage},#{topicTitle},#{topicContexts},#{topicTime},#{topicLastClickTime}
+    )
+    </insert>
+
+    <delete id="deleteTopic" parameterType="int">
+    delete from ssmbuild.topics where topicId=#{topicId}
+    </delete>
+
+    <update id="updataTopic" parameterType="topic">
+    update ssmbuild.topics set
+                               topicSectonId=#{topicSectonId},
+                               id=#{id},
+                               topicReplyCount=#{topicReplyCount},
+                               topicImage=#{topicImage},
+                               topicTitle=#{topicTitle},
+                               topicContexts=#{topicContexts},
+                               topicTime=#{topicTime},
+                               topicLastClickTime=#{topicLastClickTime}
+    where topicId= #{topicId}
+    </update>
+</mapper>

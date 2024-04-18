@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: #5875FF;
+    text-align: center;
+}
+div div{
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+
+    width: 900px;
+    height: 900px;
+}
+div div span{
+    font-size: 40px;
+}
+div div a{
+    font-size: 40px;
+}

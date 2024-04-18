@@ -1,0 +1,54 @@
+.content .show{
+    float: left;
+    width: 1000px;
+    background-color: white;
+}
+.content .show .one{
+    float: left;
+    width: 1000px;
+    height: 80px;
+
+}
+.content .show .one .one-left{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    /*background-color: whitesmoke;*/
+    width: 70px;
+    height: 60px;
+    text-align: center;
+}
+.content .show .one .one-left span{
+    display: block;
+    width: 70px;
+    line-height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+.content .show .one .one-right{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: whitesmoke;
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+}
+.content .show .one .one-right>span{
+
+    margin-left: 20px;
+    line-height: 60px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+
+
+.content .show .show-footer{
+    width: 1000px;
+    background-color: white;
+    float: left;
+    height: 80px;
+}

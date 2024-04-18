@@ -1,0 +1,21 @@
+.footer{
+    background-color: #5875FF;
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+}
+.footer .index{
+    float: left;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+.footer .index a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+.footer .index a:hover{
+   text-decoration: underline;
+    color: whitesmoke;
+}

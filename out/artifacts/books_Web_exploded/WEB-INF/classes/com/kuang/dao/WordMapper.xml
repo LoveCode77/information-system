@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kuang.dao.WordMapper">
+<!--    查询-->
+    <select id="words" parameterType="word" resultType="word">
+        select * from word
+        <where>
+            <if test="wordId!=0">
+                wordId=#{wordId}
+            </if>
+            <if test="rank!=0">
+               and `rank`=#{rank}
+            </if>
+            <if test="wordContent!=null">
+               and `wordContent`=#{wordContent}
+            </if>
+        </where>
+        ORDER BY `count` DESC
+    </select>
+<!--    其他-->
+    <update id="insertWord" parameterType="word">
+        INSERT INTO  `word`( `rank`,`wordContent`)
+        VALUES(#{rank},#{wordContent})
+    </update>
+    <insert id="updateWord" parameterType="word">
+        UPDATE `word` SET `rank`=#{rank},`wordContent`=#{wordContent},`count`=#{count}
+        WHERE `wordId`=#{wordId}
+    </insert>
+    <delete id="deleteWord" parameterType="word">
+        DELETE FROM word
+        WHERE wordId=#{wordId};
+    </delete>
+</mapper>

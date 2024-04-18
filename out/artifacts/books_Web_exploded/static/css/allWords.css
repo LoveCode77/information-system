@@ -1,0 +1,213 @@
+
+.content{
+    /*background-color: #adca84;*/
+
+    margin-top: 10px;
+    width: 100%;
+    height: 971px;
+    font-size: 30px;
+}
+.content .left{
+    background-color: #5875FF;
+
+    float: left;
+    width: 240px;
+    height:971px;
+}
+.content .left ul{
+
+    list-style: none;
+}
+.content .left ul li{
+    width: 240px;
+    height: 80px;
+    text-align: center;
+    border-bottom: #f0f0f0 solid 1px;
+}
+.content .left ul li:hover{
+    background-color: #98caea;
+}
+.content .left ul li a{
+    font-size: 25px;
+    line-height: 80px;
+    text-decoration: none;
+    color: black;
+}
+
+.content .right{
+
+    margin-left: 20px;
+    float: left;
+    height: 971px;
+    border: #f0f0f0 solid 1px;
+    border-top: none;
+}
+
+
+.content .right .topics{
+    /*background-color: #00b7ee;*/
+    width: 1250px;
+    height: 890px;
+    /*border-bottom:  #f0f0f0 solid 1px;*/
+}
+.content .right .topics .topic
+{
+    float: left;
+    width: 1500px;
+    height: 80px;
+    font-size: 25px;
+}
+.content .right .topics .topic .one{
+    float: left;
+    width: 235px;
+    height: 80px;
+    border-right: #f0f0f0 solid 1px;
+    border-bottom: #f0f0f0 solid 1px;
+    text-align: center;
+}
+.content .right .topics .topic .one span{
+    line-height: 80px;
+}
+.content .right .topics .topic .one .first{
+    float: left;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 25px;
+    background-color: #0f4be5;
+    border-radius: 3px;
+    text-align: center;
+}
+.content .right .topics .topic .one .first a{
+    text-decoration: none;
+    line-height: 40px;
+    color: whitesmoke;
+}
+.content .right .topics .topic .one .first a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.content .right .topics .topic .one .second{
+    float: left;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 25px;
+    background-color: #0f4be5;
+    border-radius: 3px;
+    text-align: center;
+
+}
+.content .right .topics .topic .one .second a{
+    text-decoration: none;
+    line-height: 40px;
+    color: whitesmoke;
+}
+.content .right .topics .topic .one .second a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.content .right .topics .topic .two{
+    float: left;
+    width: 300px;
+    height: 80px;
+    border-right: #f0f0f0 solid 1px;
+    text-align: center;
+    border-bottom: #f0f0f0 solid 1px;
+}
+.content .right .topics .topic .two a{
+    margin-left: 20px;
+    line-height: 80px;
+    text-decoration: none;
+    color: black;
+}
+.content .right .topics .topic .two a:hover{
+    text-decoration: underline;
+}
+
+.content .right .topics .topic .three{
+    float: left;
+    width: 400px;
+    height: 80px;
+    text-align: center;
+    border-right: #f0f0f0 solid 1px;
+    border-bottom: #f0f0f0 solid 1px;
+}
+.content .right .topics .topic .three span{
+    line-height: 80px;
+}
+.content .right .topics .topic .four{
+    margin-left:0px;
+    float: left;
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    /*border-right: #f0f0f0 solid 1px;*/
+    border-bottom: #f0f0f0 solid 1px;
+}
+.content .right .topics .topic .four a{
+    line-height: 80px;
+    text-decoration: none;
+    color: black;
+}
+.content .right .topics .topic .four a:hover {
+    text-decoration: underline;
+
+}
+
+
+
+
+.content .right .bottom{
+
+    color: black;
+    font-size: 25px;
+}
+.content .right .bottom .bCenter{
+
+    margin: 0 auto;
+}
+.content .right .bottom .bCenter div{
+    margin-top: 10px;
+    margin-left: 10px;
+    /*background-color: blue;*/
+    float: left;
+    height: 58px;
+    width: 80px;
+    text-align: center;
+    border-radius: 3px;
+    border: #f0f0f0 solid 1px;
+}
+.content .right .bottom .bCenter div:hover{
+    background-color: #f0f0f0;
+}
+.content .right .bottom .bCenter div a{
+    line-height: 58px;
+    text-decoration: none;
+    color: black;
+}
+.content .right .bottom .bCenter div a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.content .right .bottom .bCenter div input[type="button"]{
+    background-color: white;
+    border: none;
+    width: 80px;
+    height: 58px;
+    font-size: 25px;
+}
+.content .right .bottom .bCenter div input[type="button"]:hover{
+    background-color: #f0f0f0;
+}
+.content .right .bottom .bCenter div input[type="text"]{
+    margin-top: 10px;
+    width: 60px;
+    height: 38px;
+    border:blue solid 1px;
+    font-size: 25px;
+    text-align: center;
+}
+.content .right .bottom .bCenter div input[type="text"]:hover{
+    background-color: #f0f0f0;
+}

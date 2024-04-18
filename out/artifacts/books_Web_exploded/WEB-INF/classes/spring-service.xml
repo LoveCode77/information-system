@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 扫描service相关的bean -->
+    <context:component-scan base-package="com.kuang.service" />
+
+    <!--BookServiceImpl注入到IOC容器中-->
+    <bean id="BookServiceImpl" class="com.kuang.service.BookServiceImpl">
+        <property name="bookMapper" ref="bookMapper"/>
+    </bean>
+    <bean id="UserServiceImpl" class="com.kuang.service.UserServiceImpl">
+        <property name="userMapper" ref="userMapper"/>
+    </bean>
+    <bean id="TopicServiceImpl" class="com.kuang.service.TopicServiceImpl">
+        <property name="topicMapper" ref="topicMapper"/>
+    </bean>
+    <bean id="ReplyServiceImpl" class="com.kuang.service.ReplyServiceImpl">
+        <property name="ReplyMapper" ref="replyMapper"/>
+    </bean>
+    <bean id="ImageServiceImpl" class="com.kuang.service.ImageServiceImpl">
+        <property name="ImageMapper" ref="imageMapper"/>
+    </bean>
+    <bean id="WordServiceImpl" class="com.kuang.service.WordServiceImpl">
+        <property name="WordMapper" ref="wordMapper"/>
+    </bean>
+    <bean id="InformationServiceImpl" class="com.kuang.service.InformationServiceImpl">
+        <property name="InformationMapper" ref="informationMapper"/>
+    </bean>
+    <bean id="PrivateLetterServiceImpl" class="com.kuang.service.PrivateLetterServiceImpl">
+        <property name="PrivateLetterMapper" ref="privateLetterMapper"/>
+    </bean>
+    <bean id="PunishmentServiceImpl" class="com.kuang.service.PunishmentServiceImpl">
+        <property name="PunishmentMapper" ref="punishmentMapper"/>
+    </bean>
+
+    <!-- 配置事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!-- 注入数据库连接池 -->
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+</beans>

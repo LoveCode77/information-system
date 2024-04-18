@@ -1,0 +1,53 @@
+.content .show .bottom{
+
+    color: black;
+    font-size: 25px;
+}
+.content .show .bottom .bCenter{
+
+    margin: 0 auto;
+}
+.content .show .bottom .bCenter div{
+    margin-top: 10px;
+    margin-left: 10px;
+    /*background-color: blue;*/
+    float: left;
+    height: 58px;
+    width: 80px;
+    text-align: center;
+    border-radius: 3px;
+    border: #f0f0f0 solid 1px;
+}
+.content .show .bottom .bCenter div:hover{
+    background-color: #f0f0f0;
+}
+.content .show .bottom .bCenter div a{
+    line-height: 58px;
+    text-decoration: none;
+    color: black;
+}
+.content .show .bottom .bCenter div a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.content .show .bottom .bCenter div input[type="button"]{
+    background-color: white;
+    border: none;
+    width: 80px;
+    height: 58px;
+    font-size: 25px;
+}
+.content .show .bottom .bCenter div input[type="button"]:hover{
+    background-color: #f0f0f0;
+}
+.content .show .bottom .bCenter div input[type="text"]{
+    margin-top: 10px;
+    width: 60px;
+    height: 38px;
+    border:blue solid 1px;
+    font-size: 25px;
+    text-align: center;
+}
+.content .show .bottom .bCenter div input[type="text"]:hover{
+    background-color: #f0f0f0;
+}

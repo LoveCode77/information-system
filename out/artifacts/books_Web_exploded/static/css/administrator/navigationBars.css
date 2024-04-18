@@ -1,0 +1,26 @@
+.content .nav{
+    background-color: #5875FF;
+
+    float: left;
+    width: 240px;
+    height:971px;
+}
+.content .nav ul{
+
+    list-style: none;
+}
+.content .nav ul li{
+    width: 240px;
+    height: 80px;
+    text-align: center;
+    border-bottom: #f0f0f0 solid 1px;
+}
+.content .nav ul li:hover{
+    background-color: #98caea;
+}
+.content .nav ul li a{
+    font-size: 25px;
+    line-height: 80px;
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,41 @@
+body{
+    background-color: #f0f0f0;
+}
+
+.content-top{
+    background-color: white;
+
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.content-top .head-portrait{
+    position: relative;
+
+    float: left;
+    left: 30px;
+    top: -78px;
+    width: 158px;
+    height: 158px;
+    background-color: white;
+    border-radius: 5px;
+}
+.content-top .head-portrait>img{
+    width: 150px;
+    height: 150px;
+    margin: 4px 4px;
+    border-radius: 5px;
+}
+.content-top .username{
+    margin-left: 40px;
+    /*background-color: red;*/
+    float: left;
+    width: 500px;
+    height: 60px;
+}
+.content-top .username>span{
+    color: black;
+    font-size: 30px;
+    line-height: 60px;
+}

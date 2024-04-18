@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kuang.dao.InformationMapper">
+
+    <select id="queryById" resultType="information" parameterType="int">
+        select * from ssmbuild.information
+        where id=#{id}
+    </select>
+
+    <insert id="insertInformation" parameterType="information">
+        insert into ssmbuild.information
+            (id,signature,eMail,qq,phone,wechat)
+        values (#{id},#{signature},#{eMail},#{qq},#{phone},#{wechat})
+    </insert>
+    <update id="updateInformation" parameterType="information">
+        update ssmbuild.information
+        set id=#{id},signature=#{signature},eMail=#{eMail},
+            qq=#{qq},phone=#{phone},wechat=#{wechat}
+        where informationId=#{informationId}
+    </update>
+
+</mapper>
